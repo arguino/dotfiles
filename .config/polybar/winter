@@ -10,10 +10,13 @@
 [colors]
 background = ${xrdb:color3}
 background-alt = ${xrdb:color2}
-foreground = ${xrdb:color7}
-foreground-alt = ${xrdb:color7}
+;foreground = ${xrdb:color7}
+foreground = #000000
+;foreground-alt = ${xrdb:color7}
+foreground-alt = #000000
 primary = ${xrdb:color1}
-secondary = ${xrdb:color6}
+;secondary = ${xrdb:color6}
+secondary = #000000
 alert = ${xrdb:color10}
 
 [bar/winter]
@@ -197,16 +200,16 @@ label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-foreground = ${colors.foreground}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.secondary}
-bar-volume-foreground-1 = ${colors.secondary}
-bar-volume-foreground-2 = ${colors.secondary}
-bar-volume-foreground-3 = ${colors.secondary}
-bar-volume-foreground-4 = ${colors.secondary}
-bar-volume-foreground-5 = ${colors.primary}
+bar-volume-foreground-0 = ${colors.foreground}
+bar-volume-foreground-1 = ${colors.foreground}
+bar-volume-foreground-2 = ${colors.foreground}
+bar-volume-foreground-3 = ${colors.foreground}
+bar-volume-foreground-4 = ${colors.foreground}
+bar-volume-foreground-5 = ${colors.foreground}
 bar-volume-foreground-6 = ${colors.alert}
 bar-volume-gradient = false
 bar-volume-indicator = |
