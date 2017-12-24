@@ -129,6 +129,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Lock screen
+bindsym Mod4+l exec betterlockscreen --lock
+
 exec --no-startup-id polybar winter  --config=/home/alone/.config/polybar/winter
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc
 
