@@ -1,1 +1,1 @@
-set number
+dotfiles/.vimrc

@@ -26,6 +26,9 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #Repo alias shortcut
 alias repos="cd ~/Programming/Repos"
 
+#Config alias for the shell
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 #Set theme using an image using wal
 function theme() {
 	wal -i ~/Pictures/Wallpaper/$1 -a 80
