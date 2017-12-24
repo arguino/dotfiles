@@ -1,0 +1,37 @@
+!
+!rofi config
+!
+rofi.separator-style: solid
+rofi.sidebar-mode: true
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 16
+
+!                  bg         border   separator
+rofi.color-window: #2b303b, #000000, #000000
+!                  bg         fg       altbg      hlbg       hlfg
+rofi.color-normal: #2b303b, #839496, #2b303b, #8fa1b3, #2b303b
+rofi.color-active: #8fa1b3, #2b303b
+rofi.color-urgent: #dd002b36, #d33682, #00002b36, #dd073642, #d33682
+
+rofi.yoffset: 0
+rofi.fake-transparency: true 
+rofi.location: 0
+rofi.width: 50
+rofi.font: sourcecodepro 10 
+rofi.lines: 15
+rofi.fixed-num-lines: true
+
+!
+!URxvt config
+!
+URxvt.perl-ext-common: 	  	default,clipboard,url-select,keyboard-select
+URxvt.iso14755: 		False
+URxvt.keysym.C-C: 		perl:clipboard:copy
+URxvt.keysym.C-V:		perl:clipboard:paste
+URxvt.keysym.C-A-V: 		perl:clipboard:paste_escaped
+URxvt*font:           	  	xft:terminus:size=10
+URxvt.scrollBar:		false
+URxvt.url-select.launcher:	google-chrome-stable
+URxvt.url-select.underline:	true
+URxvt.urgentOnBell:	  	true
