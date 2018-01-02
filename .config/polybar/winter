@@ -15,8 +15,8 @@ foreground = #000000
 ;foreground-alt = ${xrdb:color7}
 foreground-alt = #000000
 primary = ${xrdb:color1}
-;secondary = ${xrdb:color6}
-secondary = #000000
+secondary = ${xrdb:color1}
+;secondary = #000000
 alert = ${xrdb:color10}
 
 [bar/winter]
