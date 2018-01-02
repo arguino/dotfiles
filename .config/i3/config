@@ -127,10 +127,12 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+#Resize binding
 bindsym $mod+r mode "resize"
 
-# Lock screen
+# Lock and screen and suspend computer using betterlockscreen
 bindsym Mod4+l exec betterlockscreen --lock
+bindsym Mod4+Shift+l exec betterlockscreen --suspend
 
 exec --no-startup-id polybar winter  --config=/home/alone/.config/polybar/winter
 exec --no-startup-id compton -b --backend glx --vsync opengl-swc
