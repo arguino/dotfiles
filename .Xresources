@@ -35,3 +35,5 @@ URxvt.scrollBar:		false
 URxvt.url-select.launcher:	google-chrome-stable
 URxvt.url-select.underline:	true
 URxvt.urgentOnBell:	  	true
+!! Larger history limit
+URxvt.saveLines: 1000000
