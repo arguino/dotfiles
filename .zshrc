@@ -1,3 +1,6 @@
+#Vim Mode
+bindkey -v 
+
 #History management
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -11,23 +14,26 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PS1="%B%n%b %~ %% "
 
 #Completion
-zstyle :compinstall filename '/home/alone/.zshrc'
-autoload -Uz compinit
-compinit
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+#zstyle :compinstall filename '/home/alone/.zshrc'
+#autoload -Uz compinit
+#compinit
+#. $HOME/.asdf/asdf.sh
+#. $HOME/.asdf/completions/asdf.bash
+
+#shortcut aliases
+alias hist="history"
 
 #idea aliases
 alias webstorm="sh /home/alone/Programming/WebStorm-173.3727.108/bin/webstorm.sh"
 alias intellij="sh /home/alone//Programming/idea-IU-173.3727.127/bin/idea.sh"
 alias rubymine="sh /home/alone/Programming/RubyMine-2017.3/bin/rubymine.sh"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
-#Repo alias shortcut
+#Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
+alias blog="cd ~/Blogging/2018/January"
 
 #Config alias for the shell
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
 #Set theme using an image using wal
 function theme() {
