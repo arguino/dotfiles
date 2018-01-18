@@ -23,6 +23,7 @@ alert = ${xrdb:color10}
 width = 100%
 height = 22
 fixed-center = true
+radius = 2
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -41,12 +42,13 @@ module-margin-right = 2
 
 font-0 = hack:pixelsize=10;1  
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0  
-font-2 = "Wuncon Siji:pixelsize=10;1" 
-font-3 = "Siji:pixelsize=10;1" 
+font-2 = FontAwesome:pixelsize=11;2.5
+font-3 = "Wuncon Siji:pixelsize=10;1" 
+font-4 = "Siji:pixelsize=10;1" 
 
 modules-left = i3
 modules-center = xwindow spotify
-modules-right = xkeyboard volume wlan memory cpu battery date
+modules-right = yr-weather xkeyboard volume wlan memory cpu battery date
 
 
 [module/xwindow]
@@ -181,11 +183,9 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = "%Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -255,7 +255,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = ${colors.foreground-alt}
+format-underline = ${colors.secondary}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
@@ -308,9 +308,16 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-
 [module/spotify]
 type = custom/script
 exec = ~/.config/polybar/spotify.sh %artist% - %title%
 tail = true
 interval = 2
+
+[module/yr-weather]
+type = custom/script
+exec = ~/.config/polybar/weather.py
+interval = 1800
+label = %output%
+format = <label>
+format-underline = ${colors.secondary}
