@@ -4,7 +4,7 @@
 wal -i ~/Pictures/Wallpaper/Winter/wallhaven-313222.jpg -a 80
 
 #Typematic delay and rate
-xset r rate 200 25
+xset r rate 200 30
 
 #Mute xorg bepping sound
 xset -b
@@ -16,6 +16,7 @@ xrdb -merge ~/.Xresources
 xbindkeys
 
 #Make Caps-Lock act as Escape and Control
+setxkbmap ca multi
 setxkbmap -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
 
@@ -26,6 +27,9 @@ export SHELL="/bin/zsh"
 export EDITOR="/bin/vim/"
 export VISUAL="/bin/vim/"
 export BROWSER="/bin/google-chrome-stable"
+
+#Work Setup, dimming latptop display
+xrandr --output eDP-1 --brightness 0.7
 
 #Font directory
 xset +fp /home/jrpa/.fonts
