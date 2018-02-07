@@ -1,6 +1,9 @@
 ###########################
 # xbindkeys configuration #
 ###########################
+
+##### MediaKey #####
+
 # Increase volume
 "amixer -q set Master 2+"
    XF86AudioRaiseVolume
@@ -28,6 +31,30 @@
 
 "light -U 5"
     XF86MonBrightnessDown
+
+##### NonMediaKey #####
+
+# Increase volume
+"amixer -q set Master 2+"
+   Menu + F3
+
+# Lower volume
+"amixer -q set Master 2-"
+   Menu + F2
+
+# Mute volume
+"amixer -q set Master toggle"
+   Menu + F1
+
+# Player Control
+"playerctl play-pause"
+   Menu + F4
+
+"playerctl previous"
+   Menu + F5
+
+"playerctl next"
+   Menu + F6
 
 ##################################
 # End of xbindkeys configuration #
