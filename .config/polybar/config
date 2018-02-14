@@ -48,7 +48,7 @@ font-4 = "Siji:pixelsize=10;1"
 
 modules-left = i3
 modules-center = xwindow spotify
-modules-right = yr-weather xkeyboard volume wlan memory cpu battery date
+modules-right = yr-weather xkeyboard volume wlan cpu memory battery date
 
 
 [module/xwindow]

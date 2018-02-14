@@ -24,16 +24,16 @@ export PS1="%B%n%b %~ %% "
 alias hist="history"
 
 #idea aliases
-alias webstorm="sh /home/alone/Programming/WebStorm-173.3727.108/bin/webstorm.sh"
-alias intellij="sh /home/alone//Programming/idea-IU-173.3727.127/bin/idea.sh"
-alias rubymine="sh /home/alone/Programming/RubyMine-2017.3/bin/rubymine.sh"
+alias webstorm="nohup sh /home/alone/Programming/WebStorm-173.3727.108/bin/webstorm.sh &"
+alias intellij="nohup sh /home/alone//Programming/idea-IU-173.3727.127/bin/idea.sh &"
+alias rubymine="nohup sh /home/alone/Programming/RubyMine-2017.3/bin/rubymine.sh &"
 
 #Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
 alias blog="cd ~/Blogging/2018/January"
 
 #Config alias for the shell
-alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dots='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #Set theme using an image using wal
 function theme() {

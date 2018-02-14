@@ -24,8 +24,8 @@ xcape -e 'Control_L=Escape'
 export DE="i3"
 export HOME="/home/alone"
 export SHELL="/bin/zsh"
-export EDITOR="/bin/vim/"
-export VISUAL="/bin/vim/"
+export EDITOR="vim"
+export VISUAL="vim"
 export BROWSER="/bin/google-chrome-stable"
 
 #Work Setup, dimming latptop display
