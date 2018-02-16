@@ -1,4 +1,5 @@
 [
+	{"keys": ["ctrl+shift+i"], "command": "extended_switcher", "args": {"list_mode": "active_group"} },
 	{"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 30.0}, "context": { "key": "setting.command_mode" }},
 	{"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -30.0}, "context": {"key": "setting.command_mode"}},
 	{"keys": ["alt+o"], "command": "goto_definition"},
@@ -8,6 +9,7 @@
 	{ "keys": ["ctrl+k"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["ctrl+alt+d"], "command": "find_under_expand" },
 	{ "keys": ["ctrl+alt+k", "ctrl+alt+d"], "command": "find_under_expand_skip" },	
+	{ "keys": ["ctrl+alt+f"], "command": "find_next" },
 	{ "keys": ["ctrl+1"], "command": "select_by_index", "args": { "index": 0 } },
 	{ "keys": ["ctrl+2"], "command": "select_by_index", "args": { "index": 1 } },
 	{ "keys": ["ctrl+3"], "command": "select_by_index", "args": { "index": 2 } },
@@ -18,4 +20,28 @@
 	{ "keys": ["ctrl+8"], "command": "select_by_index", "args": { "index": 7 } },
 	{ "keys": ["ctrl+9"], "command": "select_by_index", "args": { "index": 8 } },
 	{ "keys": ["ctrl+0"], "command": "select_by_index", "args": { "index": 9 } },
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	{
+		"keys": ["ctrl+alt+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+alt+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{ "keys": ["ctrl+h"], "command": "focus_group", "args": { "group": 0 } },
+	{ "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 1 } }
 ]

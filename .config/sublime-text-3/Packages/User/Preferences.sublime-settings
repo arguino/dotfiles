@@ -1,10 +1,13 @@
 {
 	"bold_folder_labels": true,
-	"font_face": "ttf-hack",
-	"font_size": 10,
+	"color_scheme": "Packages/User/SublimeLinter/legacy (SL).tmTheme",
+	"font_face": "Hack",
+	"font_size": 11.5,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
@@ -14,5 +17,8 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"overlay_scroll_bars": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"use_simple_full_screen": true
 }
