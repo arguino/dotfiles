@@ -36,25 +36,25 @@
 
 # Increase volume
 "amixer -q set Master 2+"
-   Menu + F3
+   Mod4 + F3
 
 # Lower volume
 "amixer -q set Master 2-"
-   Menu + F2
+   Mod4 + F2
 
 # Mute volume
 "amixer -q set Master toggle"
-   Menu + F1
+   Mod4 + F1
 
 # Player Control
 "playerctl play-pause"
-   Menu + F4
+   Mod4 + F4
 
 "playerctl previous"
-   Menu + F5
+   Mod4 + F5
 
 "playerctl next"
-   Menu + F6
+   Mod4 + F6
 
 ##################################
 # End of xbindkeys configuration #

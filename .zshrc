@@ -33,7 +33,7 @@ alias repos="cd ~/Programming/Repos"
 alias blog="cd ~/Blogging/2018/January"
 
 #Config alias for the shell
-alias dots='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
 #Set theme using an image using wal
 function theme() {
