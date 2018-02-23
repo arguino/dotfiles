@@ -47,7 +47,7 @@ font-3 = "Wuncon Siji:pixelsize=10;1"
 font-4 = "Siji:pixelsize=10;1" 
 
 modules-left = i3
-modules-center = xwindow spotify
+modules-center = xwindow player-mpris-simple
 modules-right = yr-weather xkeyboard volume wlan cpu memory battery date
 
 
@@ -321,3 +321,11 @@ interval = 1800
 label = %output%
 format = <label>
 format-underline = ${colors.secondary}
+
+[module/player-mpris-simple]
+type = custom/script
+exec = ~/.config/polybar/player-mpris-simple.bash
+interval = 2
+click-left = playerctl next
+click-right = playerctl previous
+click-middle = playerctl play-pause
