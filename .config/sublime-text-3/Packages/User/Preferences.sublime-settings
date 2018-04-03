@@ -1,8 +1,8 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/SublimeLinter/legacy (SL).tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/TronLegacy.tmTheme",
 	"font_face": "Hack",
-	"font_size": 11.5,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Six",
@@ -17,6 +17,10 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"overlay_scroll_bars": true,
+	"rulers":
+	[
+		120
+	],
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,

@@ -10,9 +10,6 @@ no matter what the current player is and the current outside weather,
 * **.config/ranger/rifle.conf**  
 Ranger config that includes the ability to set the wallpaper using
 pywal or the lockscreen using betterlockscreen directly.
-* **.config/ranger/rifle.conf**  
-Ranger config that includes the ability to set the wallpaper using
-pywal or the lockscreen using betterlockscreen directly.
 * **.config/sublime-text-3/**  
 Keybinds that might inspire you or not
 

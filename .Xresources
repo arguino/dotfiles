@@ -30,10 +30,10 @@ URxvt.iso14755: 		False
 URxvt.keysym.C-C: 		perl:clipboard:copy
 URxvt.keysym.C-V:		perl:clipboard:paste
 URxvt.keysym.C-A-V: 		perl:clipboard:paste_escaped
-URxvt*font:           	  	xft:terminus:size=10
-URxvt.scrollBar:		false
+URxvt.font:         		xft:Hack-Regular:pixelsize=16,xft:Symbola
 URxvt.url-select.launcher:	google-chrome-stable
 URxvt.url-select.underline:	true
 URxvt.urgentOnBell:	  	true
+URxvt.scrollBar: false
 !! Larger history limit
 URxvt.saveLines: 1000000

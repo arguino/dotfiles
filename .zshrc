@@ -30,7 +30,7 @@ alias rubymine="nohup sh /home/alone/Programming/RubyMine-2017.3/bin/rubymine.sh
 
 #Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
-alias blog="cd ~/Blogging/2018/January"
+alias blog="cd ~/thoughts/"
 
 #Config alias for the shell
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
@@ -38,4 +38,14 @@ alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 #Set theme using an image using wal
 function theme() {
 	wal -i ~/Pictures/Wallpaper/$1 -a 80
+}
+
+#Opens today's entry in the logbook
+function lb() {
+    vim ~/thoughts/logbook/$(date '+%Y-%m-%d').md
+}
+
+#Opens today's life logs
+function ll() {
+    vim ~/thoughts/lifelogs/$(date '+%Y-%m-%d').md
 }
