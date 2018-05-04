@@ -56,6 +56,9 @@
 "playerctl next"
    Mod4 + F6
 
+"gscreenshot"
+   m:0x0 + c:135
+
 ##################################
 # End of xbindkeys configuration #
 ##################################

@@ -1,7 +1,8 @@
 #! /bin/bash
 
 #Set color theme and background
-wal -i ~/Pictures/Wallpaper/Winter/wallhaven-313222.jpg -a 80
+wal -i ~/Pictures/Wallpaper/Animal/wolfie.jpg -a 80
+feh --bg-fill ~/Pictures/Wallpaper/Animal/wolfie.jpg --bg-fill  ~/Pictures/Wallpaper/City/brumeskyscraper.jpg
 
 #Typematic delay and rate
 xset r rate 200 30
@@ -22,17 +23,20 @@ xcape -e 'Control_L=Escape'
 
 #Set environment variables
 export DE="i3"
-export HOME="/home/alone"
-export SHELL="/bin/zsh"
+#export HOME="/home/alone"
+export HOME="/home/calm"
+export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export VISUAL="vim"
-export BROWSER="/bin/google-chrome-stable"
+export BROWSER="/bin/chromium"
+export LANG=en_US.UTF-8
+export LC_TYPE=en_US.UTF-8
 
-#Work Setup, dimming latptop display
-xrandr --output eDP-1 --brightness 0.7
+#Set Monitor order
+xrandr --output DP-1 --primary --right-of DVI-D-2
 
 #Font directory
-xset +fp /home/jrpa/.fonts
+xset +fp ~/.fonts
 xset fp rehash
 
 #Start i3

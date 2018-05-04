@@ -14,19 +14,24 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PS1="%B%n%b %~ %% "
 
 #Completion
-#zstyle :compinstall filename '/home/alone/.zshrc'
-#autoload -Uz compinit
-#compinit
-#. $HOME/.asdf/asdf.sh
-#. $HOME/.asdf/completions/asdf.bash
+zstyle :compinstall filename '/home/alone/.zshrc'
+autoload -Uz compinit
+compinit
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+#NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #shortcut aliases
 alias hist="history"
 
 #idea aliases
-alias webstorm="nohup sh /home/alone/Programming/WebStorm-173.3727.108/bin/webstorm.sh &"
-alias intellij="nohup sh /home/alone//Programming/idea-IU-173.3727.127/bin/idea.sh &"
-alias rubymine="nohup sh /home/alone/Programming/RubyMine-2017.3/bin/rubymine.sh &"
+alias webstorm="nohup sh ~/Programming/WebStorm-173.3727.108/bin/webstorm.sh &"
+alias intellij="nohup sh ~/Programming/idea-IU-181.4892.42/bin/idea.sh &"
+alias rubymine="nohup sh ~/Programming/RubyMine-2017.3/bin/rubymine.sh &"
 
 #Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
@@ -34,6 +39,10 @@ alias blog="cd ~/thoughts/"
 
 #Config alias for the shell
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+
+#Git aliases
+alias gad='git add .'
+alias gca='git commit --amend'
 
 #Set theme using an image using wal
 function theme() {
@@ -48,4 +57,9 @@ function lb() {
 #Opens today's life logs
 function ll() {
     vim ~/thoughts/lifelogs/$(date '+%Y-%m-%d').md
+}
+
+#Opens today's life logs
+function lblog() {
+    vim ~/thoughts/blogging/$(date '+%Y-%m-%d').md
 }
