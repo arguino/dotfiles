@@ -9,6 +9,7 @@
 
 [colors]
 background = ${xrdb:color3}
+;background = rgba(0, 0, 0, .800)
 background-alt = ${xrdb:color2}
 ;foreground = ${xrdb:color7}
 foreground = #000000

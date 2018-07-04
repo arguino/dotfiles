@@ -30,7 +30,7 @@ floating_modifier $mod
 
 # Start applications
 bindsym $mod+Shift+Return exec urxvt
-bindsym $mod+Shift+p exec chromium-browser
+bindsym $mod+Shift+p exec chromium
 bindsym $mod+Shift+o exec ranger
 
 # kill focused window
@@ -142,5 +142,5 @@ bindsym control+shift+k exec i3-msg move workspace to output up
 bindsym control+shift+j exec i3-msg move workspace to output down
 
 exec --no-startup-id polybar winter
-exec --no-startup-id compton -b --backend glx --vsync opengl-swc
+exec --no-startup-id compton --backend glx --vsync opengl-swc
 

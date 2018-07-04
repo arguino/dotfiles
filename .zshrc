@@ -30,8 +30,9 @@ alias hist="history"
 
 #idea aliases
 alias webstorm="nohup sh ~/Programming/WebStorm-173.3727.108/bin/webstorm.sh &"
-alias intellij="nohup sh ~/Programming/idea-IU-181.4892.42/bin/idea.sh &"
+alias intellij="nohup sh ~/Programming/idea-IU-181.4668.68/bin/idea.sh &"
 alias rubymine="nohup sh ~/Programming/RubyMine-2017.3/bin/rubymine.sh &"
+alias android="nohup sh ~/Programming/android-studio/bin/studio.sh &"
 
 #Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
@@ -43,6 +44,12 @@ alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 #Git aliases
 alias gad='git add .'
 alias gca='git commit --amend'
+alias gpfwl='git push --force-with-lease'
+
+#Elixir/Phoenix aliases
+alias mdc='mix deps.get'
+alias mdg='mix deps.get'
+alias mps='mix phx.server'
 
 #Set theme using an image using wal
 function theme() {
@@ -59,7 +66,7 @@ function ll() {
     vim ~/thoughts/lifelogs/$(date '+%Y-%m-%d').md
 }
 
-#Opens today's life logs
+#Opens today's blog post
 function lblog() {
     vim ~/thoughts/blogging/$(date '+%Y-%m-%d').md
 }
