@@ -41,6 +41,9 @@ alias blog="cd ~/thoughts/"
 #Config alias for the shell
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
+#School VPN
+alias school='sudo openconnect -u jean-raphael.poulin-arguin.1@ens.etsmtl.ca -passwd-on-stdin accesvpn.etsmtl.ca'
+
 #Git aliases
 alias gad='git add .'
 alias gca='git commit --amend'
