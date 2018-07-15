@@ -17,14 +17,12 @@ xrdb -merge ~/.Xresources
 xbindkeys
 
 #Make Caps-Lock act as Escape and Control
-setxkbmap ca multi
-setxkbmap -option ctrl:nocaps
-xcape -e 'Control_L=Escape'
+#setxkbmap ca multi
+#setxkbmap -option ctrl:nocaps
+#xcape -e 'Control_L=Escape'
 
 #Set environment variables
 export DE="i3"
-export HOME="/home/alone"
-#export HOME="/home/calm"
 export SHELL="/usr/bin/zsh"
 export EDITOR="vim"
 export VISUAL="vim"
@@ -32,12 +30,24 @@ export BROWSER="/bin/chromium"
 export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
 
-#Set Monitor order
-xrandr --output DisplayPort-0 --primary --right-of DVI-D-1
 
 #Font directory
 xset +fp ~/.fonts
 xset fp rehash
+
+#Desktop specifics
+if [ "$(whoami)" == 'calm' ]; then
+	export HOME="/home/calm"
+	#Set Monitor order
+	xrandr --output DisplayPort-0 --primary --right-of DVI-D-1
+fi
+
+#Laptop specifics
+if [ "$(whoami)" == 'alone' ]; then
+	xinput --set-prop 11 "libinput Natural Scrolling Enabled" 1
+	export HOME="/home/alone"
+fi
+
 
 #Start i3
 exec i3
