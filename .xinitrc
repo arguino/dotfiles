@@ -1,7 +1,6 @@
 #! /bin/bash
 
 #Set color theme and background
-wal -i ~/Pictures/Wallpaper/minimalrelax/splash.jpg -a 80
 #feh --bg-fill ~/Pictures/Wallpaper/Animal/wolfie.jpg --bg-fill  ~/Pictures/Wallpaper/City/brumeskyscraper.jpg
 
 #Typematic delay and rate
@@ -40,12 +39,14 @@ if [ "$(whoami)" == 'calm' ]; then
 	export HOME="/home/calm"
 	#Set Monitor order
 	xrandr --output DisplayPort-0 --primary --right-of DVI-D-1
+	wal -i ~/Pictures/Wallpaper/Weebo/dreamyscape.png -a 80
 fi
 
 #Laptop specifics
 if [ "$(whoami)" == 'alone' ]; then
 	xinput --set-prop 11 "libinput Natural Scrolling Enabled" 1
 	export HOME="/home/alone"
+	wal -i ~/Pictures/Wallpaper/Weebo/splash.jpg -a 80
 fi
 
 

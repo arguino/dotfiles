@@ -31,6 +31,7 @@ floating_modifier $mod
 # Start applications
 bindsym $mod+Shift+Return exec urxvt
 bindsym $mod+Shift+p exec chromium
+bindsym $mod+Shift+n exec nautilus
 bindsym $mod+Shift+o exec ranger
 
 # kill focused window

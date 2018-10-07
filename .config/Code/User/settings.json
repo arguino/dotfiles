@@ -1,0 +1,8 @@
+{
+    "window.menuBarVisibility": "hidden",
+    "workbench.colorTheme": "Pink Cat Boo",
+    "editor.fontFamily": "Hack",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+}

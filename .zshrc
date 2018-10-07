@@ -30,7 +30,7 @@ alias hist="history"
 
 #idea aliases
 alias webstorm="nohup sh ~/Programming/WebStorm-173.3727.108/bin/webstorm.sh &"
-alias intellij="nohup sh ~/Programming/idea-IU-181.4668.68/bin/idea.sh &"
+alias intellij="nohup sh ~/Programming/idea-IU-181.4892.42/bin/idea.sh &"
 alias rubymine="nohup sh ~/Programming/RubyMine-2017.3/bin/rubymine.sh &"
 alias android="nohup sh ~/Programming/android-studio/bin/studio.sh &"
 
