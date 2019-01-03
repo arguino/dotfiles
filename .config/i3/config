@@ -15,7 +15,7 @@ set $mod Mod1
 font pango:monospace 8
 
 #i3-gaps
-gaps inner 2
+gaps inner 4
 gaps outer 0
 
 #no-title-bar

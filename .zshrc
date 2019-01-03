@@ -36,6 +36,7 @@ alias android="nohup sh ~/Programming/android-studio/bin/studio.sh &"
 
 #Repo and current bloggging alias shortcut
 alias repos="cd ~/Programming/Repos"
+alias prog="cd ~/Programming"
 alias blog="cd ~/thoughts/"
 
 #Config alias for the shell
@@ -53,6 +54,10 @@ alias gpfwl='git push --force-with-lease'
 alias mdc='mix deps.get'
 alias mdg='mix deps.get'
 alias mps='mix phx.server'
+
+#Screenshot
+alias miammm='maim -s | xclip -selection clipboard -t image/png'
+
 
 #Set theme using an image using wal
 function theme() {
