@@ -38,8 +38,8 @@ xset fp rehash
 if [ "$(whoami)" == 'calm' ]; then
 	export HOME="/home/calm"
 	#Set Monitor order
-	xrandr --output DisplayPort-0 --primary --right-of DVI-D-1
-	wal -i ~/Pictures/Wallpaper/Weebo/dreamyscape.png -a 80
+	xrandr --output DVI-D-2 --primary --left-of DP-1
+	wal -i ~/Pictures/Wallpaper/Morning/classycoffee.jpg -a 80
 fi
 
 #Laptop specifics
