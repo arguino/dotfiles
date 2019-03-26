@@ -51,6 +51,8 @@ alias school='sudo openconnect -u jean-raphael.poulin-arguin.1@ens.etsmtl.ca -pa
 #Git aliases
 alias gad='git add .'
 alias gca='git commit --amend'
+# Git Commit Today
+alias gct='git commit -m $(date '+%Y-%m-%d')'
 alias gpfwl='git push --force-with-lease'
 
 #Elixir/Phoenix aliases
