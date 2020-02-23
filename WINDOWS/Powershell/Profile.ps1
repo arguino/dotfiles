@@ -37,7 +37,10 @@ function New-Daily-Entry-Template {
 	$Today = Get-Date -Format "yyyy-MM-dd"
 	$TargetPath = -join($thoughts_folder,"\template.md")
 	$DestinationPath = -join($thoughts_folder,"\lifelogs\", $Today, ".md")
-	cp -Path $TargetPath -Destination $DestinationPath
+	if(-not (test-path $DestinationPath))
+	{
+		cp -Path $TargetPath -Destination $DestinationPath
+	}
 	nvim $DestinationPath
 }
 Set-Alias llt New-Daily-Entry-Template
